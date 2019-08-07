@@ -3,4 +3,4 @@ Website for Volta Greentech, a startup battling global warming by reducing metha
 You can see the website live over at www.voltagreentech.com
 
 ![](assets/img/Volta.png)
-Preview screenshot 
+
