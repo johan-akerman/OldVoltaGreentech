@@ -1,0 +1,744 @@
+/***
+=== General ===
+***/
+
+body {
+    background-color: #141517 !important;
+}
+
+p {
+    font-family: 'muli', sans-serif;
+    color: #dddddd;
+}
+
+a {
+    cursor: pointer;
+}
+
+.section-title {
+    text-align: center;
+    color: #fff;
+}
+
+.title-tag.left {
+    text-align: left !important;
+}
+
+.section-title.left {
+    text-align: left !important;
+}
+
+.title-tag {
+    text-transform: uppercase !important;
+    margin-bottom: 4px !Important;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #ccc !important;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .title-tag {
+        text-align: left;
+    }
+    .section-title {
+        text-align: left;
+    }
+}
+
+
+/* Buttons */
+
+.btn-border {
+    border: 0.5px solid white !important;
+    border-radius: 30px !important;
+    font-size: 13px !Important;
+    margin: 8px 8px 0 0;
+    color: white;
+    background: transparent;
+}
+
+.btn-container {
+    margin: 75px auto 0 auto;
+    max-width: 500px;
+}
+
+a.btn-border {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 12px 24px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.45s ease 0s;
+}
+
+.btn-border:hover {
+    background-color: white !important;
+    color: #141517 !important;
+}
+
+.btn-border.active {
+    background-color: white !important;
+    color: #141517 !important;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+    padding: 16px 10% !important;
+}
+
+.nav-item {
+    padding: 0px 16px;
+    font-size: 16px;
+    text-align: center !important;
+    letter-spacing: .07em;
+    font-family: 'muli', sans-serif;
+}
+
+a.nav-link {
+    padding: 4px;
+    color: #fff !important;
+    text-decoration: none;
+    opacity: 0.65;
+}
+
+a.nav-link.active {
+    opacity: 1;
+}
+
+a.nav-link:hover {
+    opacity: 1;
+}
+
+a.navbar-brand {
+    font-size: 30px;
+    color: rgb(33, 37, 41);
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 995px) {
+    .navbar-brand img {
+        width: 225px;
+    }
+    .navbar {
+        background-color: #141517;
+        padding: 16px 16px !important;
+    }
+    a.nav-link {
+        text-align: left;
+    }
+    a.nav-link:hover {
+        border-bottom: none;
+    }
+    a.nav-link.active {
+        border-bottom: none
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .navbar-brand img {
+        width: 175px;
+    }
+}
+
+
+/* Hero Section */
+
+.hero-content {
+    margin: 0 auto;
+    padding: 38vh 10% 0 10%;
+    text-align: center;
+    margin-top: -85px;
+    max-width: 1000px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    color: white !important;
+    font-family: 'Muli', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-content {
+        padding: 250px 20px 75px 20px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .hero-content {
+        padding: 105px 20px 75px 20px;
+    }
+}
+
+
+/* Footer section */
+
+#myFooter {
+    color: #fff !important;
+}
+
+.footer-container {
+    padding: 75px 10%;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+#myFooter h5 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    line-height: 24px;
+    color: #fff !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a.logo {
+    font-size: 100px !Important;
+    font-family: 'Share Tech Mono', monospace;
+    opacity: 1 !important;
+    line-height: 1 !important;
+}
+
+#myFooter a {
+    text-decoration: none !important;
+    color: #EEEEEE !important;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none !important;
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {}
+    .footer-container {
+        padding: 0px 10% 32px 10%;
+    }
+}
+
+
+/* card section */
+
+.card-container-content {
+    padding: 0px 10% 100px 10%;
+}
+
+.card-container-content h1 {
+    text-align: left;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 25px;
+    border-radius: 0 !important;
+    border: none !important;
+    text-decoration: none !Important;
+    background: rgba(204, 204, 204, 0.1) !important;
+}
+
+.card-img-top {
+    display: block;
+    border-radius: 0 !important;
+    background-size: cover;
+    flex: 0 0 auto;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    border: none !important;
+}
+
+.card-title {
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+}
+
+.press-card-title {
+    margin-bottom: 8px !important;
+    font-size: 26px;
+    margin-top: 0 !Important;
+}
+
+.experience {
+    color: #ddd;
+    padding-top: 16px;
+}
+
+.source {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #ddd;
+    opacity: 0.4;
+}
+
+.article-type {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container-content {
+        padding: 50px 15px 100px 15px;
+    }
+    .card-container-content h1 {
+        font-size: 28px;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+    .press-row {}
+}
+
+
+/* Banner / call to action */
+
+.banner {
+    text-align: center;
+    max-width: 650px;
+    margin: 100px auto 50px auto;
+}
+
+.banner h1 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.banner p {
+    margin-bottom: 32px;
+    color: #ddd;
+}
+
+
+/***
+=== Index / Home ===
+***/
+
+.hero-background {
+    background: url("../img/hero-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 95vh;
+}
+
+.the-problem-content {
+    margin: 0px auto 75px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    max-width: 850px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.chart-btn-container {
+    color: white;
+    font-size: 14px;
+}
+
+.chart-container {
+    margin: 80px auto 0px auto;
+    max-width: 525px;
+}
+
+.the-problem-content h1 {
+    color: white;
+}
+
+#press {
+    margin-top: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+    .the-problem-content {
+        text-align: left;
+        margin-bottom: 0 !Important;
+    }
+    #press {
+        margin-top: 0px;
+    }
+}
+
+
+/***
+=== About ===
+***/
+
+.newsroom-background {
+    background: url("../img/hero-brilliant-minds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 95vh;
+}
+
+.about-big-banner {
+    background: url("../img/volta_bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 95vh;
+}
+
+.about-content {
+    margin: 175px auto;
+    text-align: left;
+    max-width: 850px;
+}
+
+.about-content h2 {
+    color: white;
+    font-size: 28px;
+    margin-top: 32px;
+}
+
+.about-content .intro {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-content {
+        margin: 0 auto;
+        padding: 75px 15px 0 15px !important;
+        text-align: left;
+    }
+}
+
+.about-content h1 {
+    color: white;
+}
+
+.about-content p {
+    color: #ddd;
+}
+
+.quote-content {
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.quote-symbol {
+    padding-left: 0;
+    font-family: 'Revalia', cursive;
+    font-size: 106px;
+    margin-bottom: 0;
+}
+
+.quote {
+    margin-top: -50px;
+    padding-left: 48px;
+}
+
+.quoter {
+    padding-left: 48px;
+}
+
+.grid-content {
+    margin: 0 auto;
+    padding: 0px 11% 0px 11%;
+}
+
+.row.grid-row {
+    padding-left: 0 !important;
+}
+
+.grid-content h1 {
+    font-size: 36px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.grid-row {
+    margin-top: 20px;
+}
+
+.text-column {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 100px !Important;
+    padding-left: 0 !important;
+}
+
+.text-column .title-tag {
+    text-align: left !important;
+}
+
+.image-column {
+    padding-right: 0 !important;
+}
+
+.text-column h1 {
+    color: white;
+}
+
+.text-column p {
+    margin-bottom: 8px;
+    color: #DDDDDD;
+}
+
+.text-column .title-tag {
+    margin-top: 100px;
+}
+
+.image-column img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-column {
+        padding-top: 0;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .image-column {
+        padding-top: 16px;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .grid-row {
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .grid-content h1 {
+        font-size: 28px;
+    }
+    .grid-content {
+        margin: 0 auto;
+        padding: 15px 15px 20px 15px !important;
+    }
+    .text-column .title-tag {
+        margin-top: 15px;
+    }
+    .display-row {
+        margin: 75px 15px 100px 15px !important;
+    }
+}
+
+
+/***
+=== Newsroom ===
+***/
+
+a.btn-border.article {
+    border-radius: 100% !Important;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.newsroom-content {
+    margin: 175px auto 46px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    max-width: 850px;
+}
+
+.newsroom-content p {
+    color: #DDDDDD;
+}
+
+@media only screen and (max-width: 768px) {
+    .newsroom-content {
+        text-align: left;
+        margin: 75px 15px 0 15px;
+        padding: 0;
+    }
+}
+
+
+/***
+=== Media kit ===
+***/
+
+a.btn-border.btn-media-kit {
+    border-radius: 100% !Important;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.media-kit-title {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+/***
+=== FaQ ===
+***/
+
+.faq-content {
+    margin: 0 auto;
+    padding: 175px 15px;
+    max-width: 850px;
+}
+
+.accordion {
+    margin-top: 10px;
+}
+
+.card-header a {
+    line-height: 40px;
+    cursor: default;
+    font-size: 22px;
+    color: #fff !important;
+    text-align: left;
+    font-weight: 300;
+}
+
+.card-header a:hover {
+    text-decoration: none !important;
+}
+
+.card-header .article {
+    float: right;
+    color: #fff;
+    text-align: center !important;
+}
+
+.card-header button:hover {
+    color: #000 !important;
+}
+
+.card-body {
+    padding: 20px 50px 10px 20px;
+}
+
+.card-body p {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-weight: normal;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #ddd !important;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px) {
+    .faq-content {
+        text-align: left;
+        padding: 75px 15px;
+    }
+}
+
+
+/***
+=== Careers ===
+***/
+
+.display-row {
+    margin: 75px 10% 100px 10% !important;
+}
+
+.display-row h2 {
+    font-size: 22px;
+    margin-bottom: 4px;
+    margin-top: 16px;
+    color: white;
+}
+
+.value-display {
+    margin-bottom: 16px;
+    color: #ddd !important;
+}
+
+.career-content {
+    margin: 175px auto 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 850px;
+    text-align: center;
+}
+
+#our-values {
+    margin: 75px 10% 0px 10% !important;
+    color: white;
+}
+
+.career-content p {
+    color: #ddd;
+}
+
+.job-description-content {
+    margin: 0 auto;
+    padding: 175px 15px;
+    max-width: 750px;
+}
+
+.job-description-content p {
+    color: #ddd !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .career-content {
+        margin: 0px;
+        padding: 75px 15px 0 15px;
+        text-align: left;
+    }
+    .display-row {
+        margin: 75px 15px 0px 15px !important;
+    }
+    .value-display {
+        margin-bottom: 16px;
+        padding: 0 !important;
+        color: #ddd !important;
+    }
+    .job-description-content {
+        padding: 75px 15px;
+    }
+}

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Volta Greentech</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+
+    <!--Open Graph (OG) Image-->
+    <meta property="og:image" content="http://voltagreentech.com/assets/img/solution.jpeg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Volta" />
+
+    <!--Description-->
+    <meta name="description" content="We are battling global warming by reducing methane emissions from cows">
+    <meta name="keywords" content="Volta Greentech, reducing methane emissions, cows, environment">
+    <meta property="og:image" content="http://voltagreentech.com/assets/img/solution.jpeg" />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--    Bootstrap is open source and available under the MIT license. Read more at https://getbootstrap.com/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!--    Chart.js is open source and available under the MIT license. Read more at https://www.chartjs.org/-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+</head>
+
+<body onload="onLoadFunction()">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo-extended-white.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newsroom.html">Newsroom</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="careers.html">Careers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container hero-background">
+        <div class="animated hero-content" id="hero-text">
+            <h1 class="">
+                    Battling global warming by reducing methane emissions from cows
+                </h1>
+        </div>
+    </div>
+
+    <!-- The problem / Our challenge -->
+    <div class="the-problem-container">
+        <div class="the-problem-content">
+            <p class="title-tag animated">Our mission</p>
+            <h1>Reduce methane emissions from cows</h1>
+            <p>
+                Cows generate more than 4% of the global greenhouse gas emissions through farting and burping, that is more than twice as much as the world’s entire fleet of airplanes. Bill Gates recently said that if cattle were a country, they would rank third in greenhouse gas emissions. This source of emissions have had no good solutions. Until now.</p>
+
+            <div class="chart-btn-container">
+
+
+                <button type="button" id="btn-for-chart1" class="btn btn-border ">If cattle were a country</button>
+                <button type="button" id="btn-for-chart2" class="btn btn-border">Cows vs airplanes</button>
+            </div>
+
+            <div class="chart-container animated">
+
+                <canvas id="myChart1" width="400" height="400"></canvas>
+                <canvas id="myChart2" width="400" height="400"></canvas>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Our solution -->
+    <div class="grid-content">
+        <div class="row grid-row">
+            <div class="col-lg-6 text-column animated">
+                <p class="title-tag">Our solution</p>
+                <h1>A fully natural feed supplement made of seaweed</h1>
+                <p>Many years of research from world leading universities proves that supplementing the seaweed Asparagopsis as 1% of the cow’s daily feed intake, reduce up to 80% of their enteric methane emissions. The seaweeds bioactive compounds trigger a process in the cow’s digestive system that block the production of methane, this without affecting the cow’s health. This seaweed has never been commercially produced before, and Volta is taking on the challenge of producing it at scale. The picture shows one portion that each cow are supplemented each day for up to 80% reduction of methane.
+                </p>
+            </div>
+
+            <div class="col-lg-6 image-column animated">
+                <img src="assets/img/solution.svg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles -->
+    <div class="card-container-content" id="press">
+        <p class="title-tag left">Press</p>
+        <h1 class="section-title left">Volta in the headlines</h1>
+        <div class="row press-row">
+
+
+            <!--Article-->
+            <div class="col-sm-12 col-md-6 col-lg-4" id="article-column-2">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/articles/article-va-aug.png">
+                    <div class="card-block">
+                        <div class="article-type">
+                            Company news
+                        </div>
+
+                        <h4 class="card-title press-card-title">Northvolt-grundaren satsar på innovationen som ska få kossor att prutta och rapa mindre
+</h4>
+                        <div class="source">
+                            Veckans Affärer, 7 August 2019
+                        </div>
+
+
+                        <a class="btn btn-border article" href="https://www.va.se/nyheter/2019/08/06/northvolt-grundaren-satsar-pa-innovationen-som-ska-fa-kossorna-att-rapa-och-prutta-mindre/" target="_blank">→</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Article-->
+            <div class="col-sm-12 col-md-6 col-lg-4" id="article-column-1">
+
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/articles/article-brilliant-minds.png">
+                    <div class="card-block">
+                        <div class="article-type">
+                            Company news
+                        </div>
+                        <h4 class="card-title press-card-title">Volta Greentech at Brilliant Minds 2019</h4>
+                        <div class="source">
+                            Volta Blog, 18 June 2019
+                        </div>
+                        <a class="btn btn-border article" href="https://www.linkedin.com/pulse/volta-greentech-brilliant-minds-2019-fredrik-%C3%A5kerman/" target="_blank">→</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Article-->
+            <div class="col-sm-12 col-md-6 col-lg-4" id="article-column-3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/articles/article-va.png">
+                    <div class="card-block">
+                        <div class="article-type">
+                            Company news
+                        </div>
+
+                        <h4 class="card-title press-card-title">Volta Greentech ska minska metanutsläpp från kor</h4>
+                        <div class="source">
+                            Veckans Affärer, 1 April 2019
+                        </div>
+                        <a class="btn btn-border article" href="https://www.va.se/nyheter/2019/04/01/volta-greentech-ska-minska-metanutslapp-fran-kor/" target="_blank">→</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="btn-container">
+                <a class="btn btn-border" href="newsroom.html">View all</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer section -->
+    <footer id="myFooter">
+        <div class="footer-container">
+            <div class="row footer-container-row">
+                <div class="col-sm-12 col-md-2 ">
+                    <a class="logo" href="index.html">0</a>
+
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <h5>Sitemap</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="about.html">About</a>
+                        </li>
+                        <li><a href="newsroom.html">Newsroom</a>
+                        </li>
+                        <li><a href="media-kit.html">Media kit</a>
+                        </li>
+                        <li><a href="faq.html">FAQ</a>
+                        </li>
+                        <li><a href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-2">
+                    <h5>Find us</h5>
+                    <ul>
+                        <li><a target="_blank" href="https://goo.gl/maps/kP1CJeszz2QVtAm98">Lindstedtsvägen 24<br>100 44 Stockholm<br>Sweden</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-2">
+                    <h5>Follow us</h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/company/volta-greentech/" target="_blank ">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-2">
+                    <h5>Contact us</h5>
+                    <ul>
+                        <li><a>fredrik@voltagreentech.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function onLoadFunction()
+    {
+        $('#myChart2').hide();
+
+        $('#btn-for-chart1').addClass('active');
+
+    }
+
+
+    $('#btn-for-chart1').click(
+        function ()
+        {
+            $('#myChart1').show();
+            $('#myChart2').hide();
+            $('#btn-for-chart1').addClass('active');
+            $('#btn-for-chart2').removeClass('active');
+
+            var ctx = document.getElementById('myChart1').getContext('2d');
+            var myChart1 = new Chart(ctx,
+            {
+                type: 'bar',
+                data:
+                {
+                    labels: ['China', 'United States', 'Republic of Cattle', 'India'],
+
+                    datasets: [
+                        {
+
+                            data: [10.2, 5.3, 5.0, 2.5],
+                            backgroundColor: [
+                    'rgba(60, 60, 60, 1)',
+                  'rgba(60, 60, 60, 1)',
+                    'rgba(204, 205, 204, 1)',
+               'rgba(60, 60, 60, 1)',
+
+            ],
+
+                            borderWidth: 1
+        }]
+                },
+
+
+
+
+                options:
+                {
+
+
+
+                    legend:
+
+
+                    {
+                        display: false
+                    },
+
+                    labels:
+                    {
+                        fontColor: "white",
+                        fontSize: "18"
+                    },
+
+                    title:
+                    {
+                        display: true,
+                        fontColor: "white",
+                        fontSize: "15",
+
+                        text: 'Gigatons of CO2 emissions per year',
+                        position: "bottom",
+                    },
+                    scales:
+                    {
+
+
+                        xAxes: [
+                            {
+                                gridLines:
+                                {
+
+                                    display: false,
+                                    color: "#333",
+
+                                },
+                                ticks:
+                                {
+                                    fontColor: "white",
+                                    fontSize: "14"
+
+                                },
+            }],
+                        yAxes: [
+                            {
+
+
+
+                                gridLines:
+                                {
+                                    display: true,
+                                    color: 'rgba(204, 204, 204, 0.1)',
+
+                                },
+
+
+                                ticks:
+                                {
+                                    beginAtZero: true,
+                                    fontColor: "#ccc",
+                                }
+            }]
+                    }
+                }
+            });
+
+        }
+    );
+
+    $('#btn-for-chart2').click(
+        function ()
+        {
+            $('#myChart1').hide();
+            $('#myChart2').show();
+            $('#btn-for-chart2').addClass('active');
+            $('#btn-for-chart1').removeClass('active');
+
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var myChart2 = new Chart(ctx,
+            {
+                type: 'bar',
+                data:
+                {
+                    labels: ['Cows', 'Airplanes'],
+                    datasets: [
+                        {
+
+                            data: [4, 2],
+                            backgroundColor: [
+                'rgba(204, 204, 204, 1)',
+                       'rgba(60, 60, 60, 1)',
+            ],
+
+                            borderWidth: 1
+        }]
+                },
+
+
+                options:
+                {
+
+                    legend:
+                    {
+                        display: false
+                    },
+
+                    title:
+                    {
+                        display: true,
+                        fontColor: "white",
+                        fontSize: "15",
+                        text: '% of global greenhouse gas emissions',
+                        position: "bottom",
+                    },
+                    scales:
+                    {
+
+
+                        xAxes: [
+                            {
+                                gridLines:
+                                {
+                                    display: false,
+                                    color: "#333",
+
+                                },
+                                ticks:
+                                {
+                                    fontColor: "white",
+                                    fontSize: "14"
+
+                                },
+            }],
+                        yAxes: [
+                            {
+
+
+
+                                gridLines:
+                                {
+                                    display: true,
+                                    color: 'rgba(204, 204, 204, 0.1)',
+
+                                },
+
+
+                                ticks:
+                                {
+                                    beginAtZero: true,
+                                    fontColor: "#ccc",
+                                }
+            }]
+                    }
+                }
+            });
+        }
+    );
+</script>
+
+
+<script>
+    var ctx = document.getElementById('myChart1').getContext('2d');
+    var myChart1 = new Chart(ctx,
+    {
+        type: 'bar',
+        data:
+        {
+            labels: ['China', 'United States', 'Republic of Cattle', 'India'],
+            datasets: [
+                {
+
+                    data: [10.2, 5.3, 5.0, 2.5],
+                    backgroundColor: [
+                    'rgba(60, 60, 60, 1)',
+                  'rgba(60, 60, 60, 1)',
+                    'rgba(204, 205, 204, 1)',
+               'rgba(60, 60, 60, 1)',
+
+            ],
+
+                    borderWidth: 1
+        }]
+        },
+
+
+
+
+        options:
+        {
+
+
+
+            legend:
+            {
+                display: false
+            },
+
+            title:
+            {
+                display: true,
+                fontColor: "white",
+                fontSize: "15",
+                text: 'Gigatons of CO2 emissions per year',
+                position: "bottom",
+            },
+            scales:
+            {
+
+
+                xAxes: [
+                    {
+                        gridLines:
+                        {
+                            display: false,
+                            color: "#333",
+
+                        },
+                        ticks:
+                        {
+                            fontColor: "white",
+                            fontSize: "14"
+
+                        },
+            }],
+                yAxes: [
+                    {
+
+
+
+                        gridLines:
+                        {
+                            display: true,
+                            color: 'rgba(204, 204, 204, 0.1)',
+
+                        },
+
+
+                        ticks:
+                        {
+                            beginAtZero: true,
+                            fontColor: "#ccc",
+                        }
+            }]
+            }
+        }
+    });
+</script>
+
+
+<script>
+</script>
+
+</html>
