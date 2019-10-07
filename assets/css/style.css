@@ -355,7 +355,7 @@ a.logo {
 ***/
 
 .hero-background {
-    background: url("../img/hero-dark.png");
+    background-image: linear-gradient(to bottom, rgba(20, 21, 23, 0.75), rgba(20, 21, 23, 1)), url("../img/volta_bg.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
