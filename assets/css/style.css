@@ -224,6 +224,10 @@ a.logo {
     line-height: 1 !important;
 }
 
+.share-tech {
+    font-family: 'Share Tech Mono', monospace !important;
+}
+
 #myFooter a {
     text-decoration: none !important;
     color: #EEEEEE !important;
@@ -367,7 +371,8 @@ a.logo {
     margin: 0px auto 75px auto;
     padding-left: 15px;
     padding-right: 15px;
-    text-align: center;
+    text-align: justify !important;
+    text-align-last: center !important;
     max-width: 850px;
     padding-top: 75px;
     padding-bottom: 75px;
@@ -398,6 +403,74 @@ a.logo {
     }
     #press {
         margin-top: 0px;
+    }
+}
+
+
+/***
+=== Factory ===
+***/
+
+.production-content {
+    margin: 0px auto 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 120px 10% 46px 10%;
+    text-align: center;
+}
+
+p.production-text {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: justify !important;
+    text-align-last: center !important;
+}
+
+.production-content h1 {
+    color: white;
+}
+
+.stat-row {
+    margin-top: 46px;
+    text-align: left;
+}
+
+.stat-number {
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 0;
+}
+
+.stat-text {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #ddd;
+    opacity: 0.4;
+}
+
+.stat-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    color: #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+    .production-content {
+        padding-bottom: 0;
+        margin-bottom: 45px;
+        text-align: left;
+        padding: 75px 15px 0 15px !important;
+    }
+    p.production-text {
+        text-align: left !important;
+        text-align-last: left !important;
+    }
+    .stat-column {
+        margin-bottom: 32px;
     }
 }
 
@@ -563,7 +636,7 @@ a.logo {
 
 
 /***
-=== Newsroom ===
+=== News ===
 ***/
 
 a.btn-border.article {
@@ -702,7 +775,8 @@ a.btn-border.btn-media-kit {
     padding-left: 15px;
     padding-right: 15px;
     max-width: 850px;
-    text-align: center;
+    text-align: justify !important;
+    text-align-last: center !important;
 }
 
 #our-values {
