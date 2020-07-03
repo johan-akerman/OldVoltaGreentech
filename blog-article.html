@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Careers - Volta Greentech</title>
+    <title>Blog - Volta Greentech</title>
 
     <!--Favicon-->
     <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
@@ -22,9 +21,8 @@
     <meta name="keywords" content="Volta Greentech, reducing methane emissions, cows, environment">
     <meta property="og:image" content="http://voltagreentech.com/assets/img/solution.jpeg" />
 
+    <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!--Fonts-->
@@ -40,10 +38,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+
 </head>
 
-<body>
-
+<body onload="onLoadFunction()">
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -65,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link active" href="blog.html">Blog</a>
                 </li>
 
                 <li class="nav-item">
@@ -73,120 +71,61 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="careers.html">Careers</a>
+                    <a class="nav-link" href="careers.html">Careers</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- The problem / Our challenge -->
-    <div class="career-container">
-        <div class="career-content">
-            <p class="title-tag">Careers</p>
-            <h1 class="section-title">Want to join our mission?</h1>
-            <p>Want to help solve one of the most urgent challenge facing the world today? This is an opportunity to join a company with a very exciting journey ahead. If you feel that you belong at Volta Greentech but don’t see a relevant open position listed below. Send us an email to fredrik@voltagreentech.com. We need a lot of talent to achieve our mission.
-            </p>
-
-        </div>
-    </div>
 
 
+    <div class="blog-post-container">
+        <div class="blog-post-content">
 
-    <!-- Articles -->
-    <div class="card-container-content" id="open-positions">
-        <div class="row press-row">
+            <div class="blog-post-header">
+                <p class="title-tag">Blog article</p>
+                <h1 class="blog-title">Volta Greentech at Brilliant Minds 2019
+</h1>
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
 
-                <div class="card">
-                    <div class="card-block">
-
-                        <h4 class="card-title">Production Engineer</h4>
-
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
-
-                        <a class="btn btn-border article" href="open-positions/production-engineer.html">→ </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
-
-                <div class="card">
-                    <div class="card-block">
-
-                        <h4 class="card-title">Business Developer
-</h4>
-
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
-
-                        <a class="btn btn-border article" href="open-positions/business-developer.html">→ </a>
-                    </div>
+                <div class="author-box">
+                    <img src="assets/img/profile-pictures/fredrik_icon.png" class="img-fluid" alt="Author">
+                    <h1 class="author-name">Fredrik Åkerman</h1>
+                    <p class="date">2019-06-28</p>
                 </div>
 
+                <img src="assets/img/factory_01_concept.jpg" class="img-fluid" alt="Responsive image">
             </div>
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <p>Cows generate ~4% of our global greenhouse gas emissions. That’s 2x more than the world’s fleet of airplanes. And these 4% is just cows farting and burping, nothing else is included. It sounds insane but there are 1.5B cows on the planet. </p>
 
-                <div class="card">
-                    <div class="card-block">
+            <p>Bill Gates recently said that if cattle were a country, they would rank third in greenhouse gas emissions. What’s more insane is that this is a source of emissions that have had no solutions. We are about to electrify the transport sector and we know how to produce green electricity, but we have no idea how to reduce the emissions from the cows. To lower the consumption of beef and dairy products is a good and obvious solution. But at scale that transition in consumer behavior will take more time than we have. </p>
 
-                        <h4 class="card-title">Marine Biologist</h4>
 
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
+            <img src="assets/img/factory_01_concept.jpg" class="img-fluid blog-post-image" alt="Responsive image">
+            <p>I have become obsessed with this challenge and together with Leo Wezelius and Angelo Demeter, we are building up a company around making cows fart and burp less methane. And at Volta Greentech we will do that by feeding cows seaweed. </p>
 
-                        <a class="btn btn-border article" href="open-positions/marine-biologist.html">→ </a>
-                    </div>
-                </div>
+            <p>By adding a tiny amount of a special type of red seaweed called Asparagopsis to the cow’s diet, their enteric methane emissions can be reduced by up to 80%. The picture below is one portion that each cow are supplemented each day.</p>
 
-            </div>
+            <img src="assets/img/factory_01_concept.jpg" class="img-fluid blog-post-image" alt="Responsive image">
+            <p>How it works in simple terms is that the seaweeds bioactive compounds trigger a process in the cow’s digestion system that block the production of methane. And this without affecting the cow’s health. It almost sounds too good to be true, but it builds on many years of research by leading researchers at universities in Australia and in the United States. </p>
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <h2 class="blog-subheader">Volta Greentech is working on how to get this out to cows at scale.</h2>
+            <p>There are two main parts to this challenge. First, we need to develop economic incentives for the farmers to use this feed supplement to reduce emissions. And then we need to figure out how to produce very large amounts of this seaweed to meet the demand. This specific seaweed has never been commercially produced anywhere in the world before. Exciting progress is being made on both parts.</p>
 
-                <div class="card">
-                    <div class="card-block">
+            <p>Thank you Brilliant Minds Foundation for giving us the chance to share what we are working on at Brilliant Minds 2019 in front of such a crowd. The more people that get involved the faster we can make something really impactful.</p>
 
-                        <h4 class="card-title">Head of Manufacturing</h4>
+            <p>If you want to join Volta Greentech on our mission to make cows fart and burp less methane — please let me know! fredrik@voltagreentech.com</p>
 
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
 
-                        <a class="btn btn-border article" href="open-positions/head-of-manufacturing.html">→ </a>
-                    </div>
-                </div>
+            <div class="banner">
+                <h1>Want to read more?</h1>
+                <p>Head over to our blog for more interesting updates.
+                </p>
+
+                <a class="btn btn-border" href="blog.html">Read more</a>
 
             </div>
-
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
-
-                <div class="card">
-                    <div class="card-block">
-
-                        <h4 class="card-title">Algae Cultivation Technician</h4>
-
-                        <div class="source">
-                            Lysekil, Sweden
-                        </div>
-
-                        <a class="btn btn-border article" href="open-positions/technician.html">→ </a>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
     </div>
 
@@ -242,8 +181,11 @@
                     </ul>
                 </div>
             </div>
+
+
         </div>
     </footer>
 </body>
+
 
 </html>

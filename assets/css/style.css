@@ -346,6 +346,7 @@ a.logo {
 .banner h1 {
     margin-bottom: 8px;
     text-align: center;
+    color: white;
 }
 
 .banner p {
@@ -363,6 +364,24 @@ a.logo {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    width: 100%;
+    height: 95vh;
+}
+
+.production-background {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(20, 21, 23, 1)), url("../img/factory_01_concept.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 95vh;
+}
+
+.product-background {
+    background-image: linear-gradient(to bottom, rgba(20, 21, 23, 0), rgba(20, 21, 23, 1)), url("../img/solution.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     width: 100%;
     height: 95vh;
 }
@@ -667,6 +686,85 @@ a.btn-border.article {
         margin: 75px 15px 0 15px;
         padding: 0;
     }
+}
+
+
+/***
+=== Blog ===
+***/
+
+.blog-card {
+    width: 100%
+}
+
+.blog-card h1 {
+    font-size: 36px;
+    color: white !important;
+    opacity: 1;
+}
+
+.blog-card h2 {
+    color: #ddd !important;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.blog-post-content {
+    margin: 175px auto 46px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    max-width: 850px;
+}
+
+.blog-post-header {
+    margin-bottom: 42px;
+}
+
+.blog-container-content {
+    padding: 0px 20% 100px 20%;
+}
+
+.author-box {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.blog-title {
+    margin-bottom: 4px;
+    margin-top: 16px;
+    text-align: center;
+    color: white !important;
+}
+
+.blog-subheader {
+    margin-top: 32px;
+    color: white !important;
+}
+
+.blog-post-content p {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.author-name {
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.date {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #ddd;
+    opacity: 0.4;
+}
+
+.blog-post-image {
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 

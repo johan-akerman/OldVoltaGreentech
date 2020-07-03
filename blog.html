@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Careers - Volta Greentech</title>
+    <title>Blog - Volta Greentech</title>
 
     <!--Favicon-->
     <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
@@ -22,9 +21,8 @@
     <meta name="keywords" content="Volta Greentech, reducing methane emissions, cows, environment">
     <meta property="og:image" content="http://voltagreentech.com/assets/img/solution.jpeg" />
 
+    <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!--Fonts-->
@@ -40,10 +38,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+
 </head>
 
-<body>
-
+<body onload="onLoadFunction()">
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -65,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link active" href="blog.html">Blog</a>
                 </li>
 
                 <li class="nav-item">
@@ -73,19 +71,22 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="careers.html">Careers</a>
+                    <a class="nav-link" href="careers.html">Careers</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+
+
+
     <!-- The problem / Our challenge -->
-    <div class="career-container">
-        <div class="career-content">
-            <p class="title-tag">Careers</p>
-            <h1 class="section-title">Want to join our mission?</h1>
-            <p>Want to help solve one of the most urgent challenge facing the world today? This is an opportunity to join a company with a very exciting journey ahead. If you feel that you belong at Volta Greentech but don’t see a relevant open position listed below. Send us an email to fredrik@voltagreentech.com. We need a lot of talent to achieve our mission.
-            </p>
+    <div class="newsroom-container">
+        <div class="newsroom-content">
+            <p class="title-tag">Blog</p>
+            <h1 class="section-title">Latest blog posts</h1>
+            <br>
+
 
         </div>
     </div>
@@ -93,103 +94,40 @@
 
 
     <!-- Articles -->
-    <div class="card-container-content" id="open-positions">
-        <div class="row press-row">
+    <div class="blog-container-content">
+        <div class="row">
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
 
-                <div class="card">
-                    <div class="card-block">
 
-                        <h4 class="card-title">Production Engineer</h4>
 
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
 
-                        <a class="btn btn-border article" href="open-positions/production-engineer.html">→ </a>
 
+            <div class="card blog-card">
+
+                <div class="card-block">
+
+                    <h1>Volta Greentech at Brilliant Minds 2019</h1>
+                    <h2>Volta got the opportunity to speak at the Brilliant Minds event in Stockholm. </h2>
+
+                    <div class="source">
+
+                        Fredrik Åkerman, 1 June 2020
                     </div>
+                    <a class="btn btn-border article" href="/blog-article.html">→ </a>
                 </div>
             </div>
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
 
-                <div class="card">
-                    <div class="card-block">
 
-                        <h4 class="card-title">Business Developer
-</h4>
 
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
 
-                        <a class="btn btn-border article" href="open-positions/business-developer.html">→ </a>
-                    </div>
-                </div>
 
-            </div>
-
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
-
-                <div class="card">
-                    <div class="card-block">
-
-                        <h4 class="card-title">Marine Biologist</h4>
-
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
-
-                        <a class="btn btn-border article" href="open-positions/marine-biologist.html">→ </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
-
-                <div class="card">
-                    <div class="card-block">
-
-                        <h4 class="card-title">Head of Manufacturing</h4>
-
-                        <div class="source">
-                            Stockholm, Sweden
-                        </div>
-
-                        <a class="btn btn-border article" href="open-positions/head-of-manufacturing.html">→ </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4 ">
-
-                <div class="card">
-                    <div class="card-block">
-
-                        <h4 class="card-title">Algae Cultivation Technician</h4>
-
-                        <div class="source">
-                            Lysekil, Sweden
-                        </div>
-
-                        <a class="btn btn-border article" href="open-positions/technician.html">→ </a>
-                    </div>
-                </div>
-
-            </div>
 
         </div>
-    </div>
 
+
+
+    </div>
 
 
     <!-- Footer section -->
@@ -242,8 +180,55 @@
                     </ul>
                 </div>
             </div>
+
+
         </div>
     </footer>
 </body>
+
+<script>
+    function onLoadFunction()
+    {
+        $('.company-news').show();
+        $('.industry-insight').show();
+        $('#button-1').addClass('active');
+
+    }
+
+
+    $('#button-1').click(
+        function ()
+        {
+            $('.company-news').show();
+            $('.industry-insight').show();
+            $('#button-1').addClass('active');
+            $('#button-2').removeClass('active');
+            $('#button-3').removeClass('active');
+        }
+    );
+
+    $('#button-2').click(
+        function ()
+        {
+            $('.company-news').show();
+            $('.industry-insight').hide();
+            $('#button-1').removeClass('active');
+            $('#button-2').addClass('active');
+            $('#button-3').removeClass('active');
+
+        }
+    );
+
+    $('#button-3').click(
+        function ()
+        {
+            $('.company-news').hide();
+            $('.industry-insight').show();
+            $('#button-1').removeClass('active');
+            $('#button-2').removeClass('active');
+            $('#button-3').addClass('active');
+        }
+    );
+</script>
 
 </html>
