@@ -1,574 +1,757 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>News - Volta Greentech</title>
 
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon.png"
+      sizes="32x32"
+    />
 
     <!--Open Graph (OG) Image-->
-    <meta property="og:image" content="http://voltagreentech.com/assets/img/solution.jpeg" />
+    <meta
+      property="og:image"
+      content="http://voltagreentech.com/assets/img/solution.jpeg"
+    />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Volta" />
 
     <!--Description-->
-    <meta name="description" content=" We are battling global warming by reducing methane emissions from cows">
-    <meta name="keywords" content="Volta Greentech, reducing methane emissions, cows, environment">
-    <meta property="og:image" content="http://voltagreentech.com/assets/img/solution.jpeg" />
+    <meta
+      name="description"
+      content=" We are battling global warming by reducing methane emissions from cows"
+    />
+    <meta
+      name="keywords"
+      content="Volta Greentech, reducing methane emissions, cows, environment"
+    />
+    <meta
+      property="og:image"
+      content="http://voltagreentech.com/assets/img/solution.jpeg"
+    />
 
     <!--Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-</head>
-
-<body onload="onLoadFunction()">
-
+  <body onload="onLoadFunction()">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/logo-extended-white.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html"
+        ><img src="assets/img/logo-extended-white.png"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="production.html">Production</a>
+          </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="product.html">Product</a>
-                </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="production.html">Production</a>
-                </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="news.html">News</a>
+          </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="news.html">News</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="careers.html">Careers</a>
-                </li>
-            </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-
-
-
 
     <!-- The problem / Our challenge -->
     <div class="newsroom-container">
-        <div class="newsroom-content">
-            <p class="title-tag">News</p>
-            <h1 class="section-title">Follow the journey</h1>
-            <br>
+      <div class="newsroom-content">
+        <p class="title-tag">News</p>
+        <h1 class="section-title">Follow the journey</h1>
+        <br />
 
-            <div class="chart-btn-container">
-                <button type="button" class="btn btn-border active" id="button-1">All</button>
+        <div class="chart-btn-container">
+          <button type="button" class="btn btn-border active" id="button-1">
+            All
+          </button>
 
-                <button type="button" class="btn btn-border " id="button-2">Company news</button>
+          <button type="button" class="btn btn-border" id="button-2">
+            Company news
+          </button>
 
-                <button type="button" class="btn btn-border" id="button-3">Industry insights</button>
-            </div>
+          <button type="button" class="btn btn-border" id="button-3">
+            Industry insights
+          </button>
         </div>
+      </div>
     </div>
-
-
 
     <!-- Articles -->
     <div class="card-container-content">
-        <div class="row press-row">
-
-
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4" id="first-article-column">
-
-
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-brilliant-minds.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">The startup waging war against cows farts</h4>
-                        <div class="source">
-                            Sifted, 1 June 2020
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://sifted.eu/articles/volta-greentech-cows/">→ </a>
-                    </div>
-                </div>
-
-                <!--Article-->
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/dn.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-
-                        <h4 class="card-title press-card-title">Här odlas alger som får kor att släppa ut mindre metan
-
-</h4>
-                        <div class="source">
-                            Dagens Nyheter, 8 December 2019
-                        </div>
-
-
-                        <a class="btn btn-border article" href="https://www.dn.se/sthlm/har-odlas-alger-som-far-kor-att-fisa-mindre-metan//" target="_blank">→</a>
-                    </div>
-                </div>
-
-                <!--Article-->
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-va-aug.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-
-                        <h4 class="card-title press-card-title">Northvolt-grundaren satsar på innovationen som ska få kossor att prutta och rapa mindre
-</h4>
-                        <div class="source">
-                            Veckans Affärer, 7 August 2019
-                        </div>
-
-
-                        <a class="btn btn-border article" href="https://www.va.se/nyheter/2019/08/06/northvolt-grundaren-satsar-pa-innovationen-som-ska-fa-kossorna-att-rapa-och-prutta-mindre/" target="_blank">→</a>
-                    </div>
-                </div>
-
-
-                <!--Article-->
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-expressen.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-
-                        <h4 class="card-title press-card-title">Så ska man få kossor fisa och rapa mindre
-</h4>
-                        <div class="source">
-                            Expressen, 7 August 2019
-                        </div>
-
-
-                        <a class="btn btn-border article" href="https://www.expressen.se/dinapengar/sa-ska-man-fa-kossor-fisa-och-rapa-mindre/" target="_blank">→</a>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">Entreprenör vill göra kor klimatsmarta med alger</h4>
-                        <div class="source">
-                            Lantbrukets Affärstidning, 20 Mars 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.atl.nu/lantbruk/entreprenor-vill-gora-kor-klimatsmarta-med-alger/">→</a>
-                    </div>
-                </div>
-
-
-
-
-                <div class="card industry-insight">
-                    <img class="card-img-top" src="assets/img/articles/industry-insights-4.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Industry insight
-                        </div>
-                        <h4 class="card-title press-card-title">Can seaweed cut methane emissions on dairy farms?</h4>
-                        <div class="source">
-                            UC Davis, 24 May 2018
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.ucdavis.edu/news/can-seaweed-cut-methane-emissions-dairy-farms/">→ </a>
-                    </div>
-                </div>
-
-
-
-                <div class="card industry-insight">
-                    <img class="card-img-top" src="assets/img/articles/industry-insights-1.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Industry insight
-                        </div>
-                        <h4 class="card-title press-card-title">Seaweed could make cows burp less methane and cut their carbon hoofprint</h4>
-                        <div class="source">
-                            MIT Technology Review, 23 November 2018
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.technologyreview.com/s/612452/how-seaweed-could-shrink-livestocks-global-carbon-hoofprint/?fbclid=IwAR0wmvtkcK3egKf_Hcy5SUdhwsXfrq7WAPXlNFxNByvA3AYiqgVIQjDembg">→ </a>
-                    </div>
-                </div>
-
-
+      <div class="row press-row" id="news-container">
+        <!--Article-->
+        <div class="col-sm-12 col-md-6 col-lg-4" id="first-article-column">
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-brilliant-minds.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                The startup waging war against cows farts
+              </h4>
+              <div class="source">
+                Sifted, 1 June 2020
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://sifted.eu/articles/volta-greentech-cows/"
+                >→
+              </a>
             </div>
+          </div>
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4" id="second-article-column">
+          <!--Article-->
+          <div class="card company-news">
+            <img class="card-img-top" src="assets/img/articles/dn.png" />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
 
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/feedNavigator.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">Swedish start-up tackling methane emissions in cattle attracts investors
-</h4>
-                        <div class="source">
-                            Feed Navigator, 2 June 2020
-                        </div>
+              <h4 class="card-title press-card-title">
+                Här odlas alger som får kor att släppa ut mindre metan
+              </h4>
+              <div class="source">
+                Dagens Nyheter, 8 December 2019
+              </div>
 
-
-                        <a class="btn btn-border article" href="HTTPS://WWW.FEEDNAVIGATOR.COM/ARTICLE/2020/06/02/METHANE-REDUCING-SWEDISH-START-UP-ATTRACTS-INVESTORS" target="_blank">→</a>
-                    </div>
-                </div>
-
-                <div class="card industry-insight">
-                    <img class="card-img-top" src="assets/img/articles/economist.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Industry insight
-                        </div>
-                        <h4 class="card-title press-card-title">The answer to livestock that burp methane may be seaweed</h4>
-                        <div class="source">
-                            The Economist, 31 Oct 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.economist.com/science-and-technology/2019/10/31/the-answer-to-livestock-that-burp-methane-may-be-seaweed">→ </a>
-                    </div>
-                </div>
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-di.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-
-                        <h4 class="card-title press-card-title">Vill göra kossor miljövänliga - tar in pengar från Northvolt-vd:n</h4>
-                        <div class="source">
-                            Dagens Industri, 7 August 2019
-                        </div>
-
-
-                        <a class="btn btn-border article" href="https://www.di.se/nyheter/vill-gora-kossor-miljovanliga-tar-in-pengar-fran-northvolt-vdn/" target="_blank">→</a>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-breakit.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-
-                        <h4 class="card-title press-card-title">De ska minska kornas utsläpp med sjögräs - backas av Northvolt grundaren</h4>
-                        <div class="source">
-                            Breakit, 7 August 2019
-                        </div>
-
-                        <a class="btn btn-border article" href="https://www.breakit.se/artikel/21221/de-ska-minska-kornas-utslapp-med-sjogras-backas-av-northvolt-grundaren" target="_blank">→</a>
-                    </div>
-                </div>
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-va.png">
-                    <div class="card-block">
-
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">Volta Greentech ska minska metanutsläpp från kor</h4>
-                        <div class="source">
-                            Veckans Affärer, 1 April 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.va.se/nyheter/2019/04/01/volta-greentech-ska-minska-metanutslapp-fran-kor/">→ </a>
-                    </div>
-                </div>
-
-
-                <div class="card industry-insight">
-                    <img class="card-img-top" src="assets/img/articles/industry-insights-3.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Industry insight
-                        </div>
-                        <h4 class="card-title press-card-title">How eating seaweed can help cows to belch less methane</h4>
-                        <div class="source">
-                            YaleEnvironment360, 2 July 2018
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://e360.yale.edu/features/how-eating-seaweed-can-help-cows-to-belch-less-methane">→ </a>
-                    </div>
-                </div>
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-fredrik-video.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">Volta presentated by Fredrik Åkerman at Brilliant Minds</h4>
-                        <div class="source">
-                            Youtube video, 4 July 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.youtube.com/watch?v=77KozPbACI0">→</a>
-                    </div>
-                </div>
-
-
-
-
-
+              <a
+                class="btn btn-border article"
+                href="https://www.dn.se/sthlm/har-odlas-alger-som-far-kor-att-fisa-mindre-metan//"
+                target="_blank"
+                >→</a
+              >
             </div>
+          </div>
 
-            <!--Article-->
-            <div class="col-sm-12 col-md-6 col-lg-4" id="third-article-column">
+          <!--Article-->
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-va-aug.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
 
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-expressen.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">This factory is growing a new kind of food for cows</h4>
-                        <div class="source">
-                            Fast Company, 1 June 2020
-                        </div>
+              <h4 class="card-title press-card-title">
+                Northvolt-grundaren satsar på innovationen som ska få kossor att
+                prutta och rapa mindre
+              </h4>
+              <div class="source">
+                Veckans Affärer, 7 August 2019
+              </div>
 
-
-                        <a class="btn btn-border article" href="https://www.fastcompany.com/90510673/this-factory-is-growing-a-new-kind-of-food-for-cows-a-seaweed-that-reduces-their-burps" target="_blank">→</a>
-                    </div>
-                </div>
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-brilliant-minds.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">Volta Greentech at Brilliant Minds 2019</h4>
-                        <div class="source">
-                            Blog, 28 June 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.linkedin.com/pulse/volta-greentech-brilliant-minds-2019-fredrik-%C3%A5kerman/">→ </a>
-                    </div>
-                </div>
-
-
-                <div class="card industry-insight">
-                    <img class="card-img-top" src="assets/img/articles/industry-insights-5.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Industry insight
-                        </div>
-                        <h4 class="card-title press-card-title">10 technologies that could combat climate change as food demand soars</h4>
-                        <div class="source">
-                            MIT Technology Review, 18 July 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.technologyreview.com/s/613979/gene-editing-will-help-far-more-than-organic-food-to-slow-global-warming/amp/?__twitter_impression=true&fbclid=IwAR1v2jIE9C5wKqnKEb1Upk4F9QdL0bTFsCR-q4snVR_0KML02Yf2G8Ws_pw">→ </a>
-                    </div>
-                </div>
-
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-sweden-foodtech.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">Have you met Volta<br> Greentech?</h4>
-                        <div class="source">
-                            Sweden Foodtech, 15 April 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.foodtech.media/2019/04/15/HgfIeZ-have-you-met-volta-greentech">→ </a>
-                    </div>
-                </div>
-
-
-
-
-                <div class="card company-news">
-                    <img class="card-img-top" src="assets/img/articles/article-resume.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Company news
-                        </div>
-                        <h4 class="card-title press-card-title">5 intryck från Brilliant Minds<br> 2019</h4>
-                        <div class="source">
-                            Resume, 18 June 2019
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.resume.se/blogg/karin-winther/2019/06/18/5-intryck-fran-brilliant-minds/">→ </a>
-                    </div>
-                </div>
-
-
-
-                <div class="card industry-insight">
-                    <img class="card-img-top" src="assets/img/articles/industry-insights-2.png">
-                    <div class="card-block">
-                        <div class="article-type">
-                            Industry insight
-                        </div>
-                        <h4 class="card-title press-card-title">Cows fed seaweed in bid to tackle climate change</h4>
-                        <div class="source">
-                            Independent, 31 August 2018
-                        </div>
-                        <a class="btn btn-border article" target="_blank" href="https://www.independent.co.uk/environment/cows-seaweed-food-climate-change-global-warming-methane-emissions-university-california-a8516361.html">→ </a>
-                    </div>
-                </div>
-
-
-
+              <a
+                class="btn btn-border article"
+                href="https://www.va.se/nyheter/2019/08/06/northvolt-grundaren-satsar-pa-innovationen-som-ska-fa-kossorna-att-rapa-och-prutta-mindre/"
+                target="_blank"
+                >→</a
+              >
             </div>
+          </div>
 
+          <!--Article-->
 
-            <div class="banner">
-                <h1>Media Kit</h1>
-                <p>Here you can find photos of cows, seaweed, our team and logos. Please contact fredrik@voltagreentech.com if you have any questions.
-                </p>
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-expressen.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
 
-                <a class="btn btn-border" href="media-kit.html">View</a>
+              <h4 class="card-title press-card-title">
+                Så ska man få kossor fisa och rapa mindre
+              </h4>
+              <div class="source">
+                Expressen, 7 August 2019
+              </div>
 
+              <a
+                class="btn btn-border article"
+                href="https://www.expressen.se/dinapengar/sa-ska-man-fa-kossor-fisa-och-rapa-mindre/"
+                target="_blank"
+                >→</a
+              >
             </div>
+          </div>
+
+          <div class="card company-news">
+            <img class="card-img-top" src="assets/img/articles/article.png" />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                Entreprenör vill göra kor klimatsmarta med alger
+              </h4>
+              <div class="source">
+                Lantbrukets Affärstidning, 20 Mars 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.atl.nu/lantbruk/entreprenor-vill-gora-kor-klimatsmarta-med-alger/"
+                >→</a
+              >
+            </div>
+          </div>
+
+          <div class="card industry-insight">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/industry-insights-4.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Industry insight
+              </div>
+              <h4 class="card-title press-card-title">
+                Can seaweed cut methane emissions on dairy farms?
+              </h4>
+              <div class="source">
+                UC Davis, 24 May 2018
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.ucdavis.edu/news/can-seaweed-cut-methane-emissions-dairy-farms/"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card industry-insight">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/industry-insights-1.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Industry insight
+              </div>
+              <h4 class="card-title press-card-title">
+                Seaweed could make cows burp less methane and cut their carbon
+                hoofprint
+              </h4>
+              <div class="source">
+                MIT Technology Review, 23 November 2018
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.technologyreview.com/s/612452/how-seaweed-could-shrink-livestocks-global-carbon-hoofprint/?fbclid=IwAR0wmvtkcK3egKf_Hcy5SUdhwsXfrq7WAPXlNFxNByvA3AYiqgVIQjDembg"
+                >→
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
 
+        <!--Article-->
+        <div class="col-sm-12 col-md-6 col-lg-4" id="second-article-column">
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/feedNavigator.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                Swedish start-up tackling methane emissions in cattle attracts
+                investors
+              </h4>
+              <div class="source">
+                Feed Navigator, 2 June 2020
+              </div>
+
+              <a
+                class="btn btn-border article"
+                href="HTTPS://WWW.FEEDNAVIGATOR.COM/ARTICLE/2020/06/02/METHANE-REDUCING-SWEDISH-START-UP-ATTRACTS-INVESTORS"
+                target="_blank"
+                >→</a
+              >
+            </div>
+          </div>
+
+          <div class="card industry-insight">
+            <img class="card-img-top" src="assets/img/articles/economist.png" />
+            <div class="card-block">
+              <div class="article-type">
+                Industry insight
+              </div>
+              <h4 class="card-title press-card-title">
+                The answer to livestock that burp methane may be seaweed
+              </h4>
+              <div class="source">
+                The Economist, 31 Oct 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.economist.com/science-and-technology/2019/10/31/the-answer-to-livestock-that-burp-methane-may-be-seaweed"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-di.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+
+              <h4 class="card-title press-card-title">
+                Vill göra kossor miljövänliga - tar in pengar från
+                Northvolt-vd:n
+              </h4>
+              <div class="source">
+                Dagens Industri, 7 August 2019
+              </div>
+
+              <a
+                class="btn btn-border article"
+                href="https://www.di.se/nyheter/vill-gora-kossor-miljovanliga-tar-in-pengar-fran-northvolt-vdn/"
+                target="_blank"
+                >→</a
+              >
+            </div>
+          </div>
+
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-breakit.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+
+              <h4 class="card-title press-card-title">
+                De ska minska kornas utsläpp med sjögräs - backas av Northvolt
+                grundaren
+              </h4>
+              <div class="source">
+                Breakit, 7 August 2019
+              </div>
+
+              <a
+                class="btn btn-border article"
+                href="https://www.breakit.se/artikel/21221/de-ska-minska-kornas-utslapp-med-sjogras-backas-av-northvolt-grundaren"
+                target="_blank"
+                >→</a
+              >
+            </div>
+          </div>
+
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-va.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                Volta Greentech ska minska metanutsläpp från kor
+              </h4>
+              <div class="source">
+                Veckans Affärer, 1 April 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.va.se/nyheter/2019/04/01/volta-greentech-ska-minska-metanutslapp-fran-kor/"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card industry-insight">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/industry-insights-3.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Industry insight
+              </div>
+              <h4 class="card-title press-card-title">
+                How eating seaweed can help cows to belch less methane
+              </h4>
+              <div class="source">
+                YaleEnvironment360, 2 July 2018
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://e360.yale.edu/features/how-eating-seaweed-can-help-cows-to-belch-less-methane"
+                >→
+              </a>
+            </div>
+          </div>
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-fredrik-video.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                Volta presentated by Fredrik Åkerman at Brilliant Minds
+              </h4>
+              <div class="source">
+                Youtube video, 4 July 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=77KozPbACI0"
+                >→</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--Article-->
+        <div class="col-sm-12 col-md-6 col-lg-4" id="third-article-column">
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-expressen.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                This factory is growing a new kind of food for cows
+              </h4>
+              <div class="source">
+                Fast Company, 1 June 2020
+              </div>
+
+              <a
+                class="btn btn-border article"
+                href="https://www.fastcompany.com/90510673/this-factory-is-growing-a-new-kind-of-food-for-cows-a-seaweed-that-reduces-their-burps"
+                target="_blank"
+                >→</a
+              >
+            </div>
+          </div>
+
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-brilliant-minds.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                Volta Greentech at Brilliant Minds 2019
+              </h4>
+              <div class="source">
+                Blog, 28 June 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.linkedin.com/pulse/volta-greentech-brilliant-minds-2019-fredrik-%C3%A5kerman/"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card industry-insight">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/industry-insights-5.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Industry insight
+              </div>
+              <h4 class="card-title press-card-title">
+                10 technologies that could combat climate change as food demand
+                soars
+              </h4>
+              <div class="source">
+                MIT Technology Review, 18 July 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.technologyreview.com/s/613979/gene-editing-will-help-far-more-than-organic-food-to-slow-global-warming/amp/?__twitter_impression=true&fbclid=IwAR1v2jIE9C5wKqnKEb1Upk4F9QdL0bTFsCR-q4snVR_0KML02Yf2G8Ws_pw"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-sweden-foodtech.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                Have you met Volta<br />
+                Greentech?
+              </h4>
+              <div class="source">
+                Sweden Foodtech, 15 April 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.foodtech.media/2019/04/15/HgfIeZ-have-you-met-volta-greentech"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card company-news">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/article-resume.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Company news
+              </div>
+              <h4 class="card-title press-card-title">
+                5 intryck från Brilliant Minds<br />
+                2019
+              </h4>
+              <div class="source">
+                Resume, 18 June 2019
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.resume.se/blogg/karin-winther/2019/06/18/5-intryck-fran-brilliant-minds/"
+                >→
+              </a>
+            </div>
+          </div>
+
+          <div class="card industry-insight">
+            <img
+              class="card-img-top"
+              src="assets/img/articles/industry-insights-2.png"
+            />
+            <div class="card-block">
+              <div class="article-type">
+                Industry insight
+              </div>
+              <h4 class="card-title press-card-title">
+                Cows fed seaweed in bid to tackle climate change
+              </h4>
+              <div class="source">
+                Independent, 31 August 2018
+              </div>
+              <a
+                class="btn btn-border article"
+                target="_blank"
+                href="https://www.independent.co.uk/environment/cows-seaweed-food-climate-change-global-warming-methane-emissions-university-california-a8516361.html"
+                >→
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner">
+          <h1>Media Kit</h1>
+          <p>
+            Here you can find photos of cows, seaweed, our team and logos.
+            Please contact fredrik@voltagreentech.com if you have any questions.
+          </p>
+
+          <a class="btn btn-border" href="media-kit.html">View</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer section -->
     <footer id="myFooter">
-        <div class="footer-container">
-            <div class="row footer-container-row">
-                <div class="col-sm-12 col-md-2 ">
-                    <a class="logo" href="index.html">0</a>
+      <div class="footer-container">
+        <div class="row footer-container-row">
+          <div class="col-sm-12 col-md-2">
+            <a class="logo" href="index.html">0</a>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <h5>Sitemap</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
 
-                </div>
-                <div class="col-sm-12 col-md-2">
-                    <h5>Sitemap</h5>
-                    <ul>
-                        <li><a href="index.html">Home</a>
-                        </li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="media-kit.html">Media kit</a></li>
 
-                        <li><a href="news.html">News</a>
-                        </li>
-                        <li><a href="media-kit.html">Media kit</a>
-                        </li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
 
-                        <li><a href="careers.html">Careers</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="col-sm-12 col-md-2">
+            <h5>Find us</h5>
+            <ul>
+              <li>
+                <a target="_blank" href="https://goo.gl/maps/BduFJRPWLRuhQKjo8"
+                  >Pilgatan 5<br />112 23 Stockholm<br />Sweden</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                <div class="col-sm-12 col-md-2">
-                    <h5>Find us</h5>
-                    <ul>
-                        <li><a target="_blank" href="https://goo.gl/maps/BduFJRPWLRuhQKjo8">Pilgatan 5<br>112 23 Stockholm<br>Sweden</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="col-sm-12 col-md-2">
+            <h5>Follow us</h5>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/volta-greentech/"
+                  target="_blank "
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                <div class="col-sm-12 col-md-2">
-                    <h5>Follow us</h5>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/company/volta-greentech/" target="_blank ">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-12 col-md-2">
-                    <h5>Contact us</h5>
-                    <ul>
-                        <li><a>fredrik@voltagreentech.com</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-
-
+          <div class="col-sm-12 col-md-2">
+            <h5>Contact us</h5>
+            <ul>
+              <li><a>fredrik@voltagreentech.com</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script>
-    function onLoadFunction()
-    {
-        $('.company-news').show();
-        $('.industry-insight').show();
-        $('#button-1').addClass('active');
-
+  <script>
+    function onLoadFunction() {
+      $(".company-news").show();
+      $(".industry-insight").show();
+      $("#button-1").addClass("active");
     }
 
+    $("#button-1").click(function () {
+      $(".company-news").show();
+      $(".industry-insight").show();
+      $("#button-1").addClass("active");
+      $("#button-2").removeClass("active");
+      $("#button-3").removeClass("active");
+    });
 
-    $('#button-1').click(
-        function ()
-        {
-            $('.company-news').show();
-            $('.industry-insight').show();
-            $('#button-1').addClass('active');
-            $('#button-2').removeClass('active');
-            $('#button-3').removeClass('active');
-        }
-    );
+    $("#button-2").click(function () {
+      $(".company-news").show();
+      $(".industry-insight").hide();
+      $("#button-1").removeClass("active");
+      $("#button-2").addClass("active");
+      $("#button-3").removeClass("active");
+    });
 
-    $('#button-2').click(
-        function ()
-        {
-            $('.company-news').show();
-            $('.industry-insight').hide();
-            $('#button-1').removeClass('active');
-            $('#button-2').addClass('active');
-            $('#button-3').removeClass('active');
-
-        }
-    );
-
-    $('#button-3').click(
-        function ()
-        {
-            $('.company-news').hide();
-            $('.industry-insight').show();
-            $('#button-1').removeClass('active');
-            $('#button-2').removeClass('active');
-            $('#button-3').addClass('active');
-        }
-    );
-</script>
-
+    $("#button-3").click(function () {
+      $(".company-news").hide();
+      $(".industry-insight").show();
+      $("#button-1").removeClass("active");
+      $("#button-2").removeClass("active");
+      $("#button-3").addClass("active");
+    });
+  </script>
 </html>
