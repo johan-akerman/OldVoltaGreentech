@@ -29,7 +29,7 @@ const articles = [
             title: "The answer to livestock that burp methane may be seaweed",
             date: "31 October 2019",
             img: "/assets/img/articles/economist.png",
-            tag: "company-news",
+            tag: "industry-insight",
             publisher: "The Economist",
             url: "https://www.economist.com/science-and-technology/2019/10/31/the-answer-to-livestock-that-burp-methane-may-be-seaweed"
         },
@@ -88,14 +88,14 @@ const articles = [
             title: "Can seaweed cut methane emissions on dairy farms?",
             date: "24 May 2018",
             img: "/assets/img/articles/industry-insights-4.png",
-            tag: "company-news",
+            tag: "industry-insight",
             publisher: "UC Davis",
             url: "https://www.ucdavis.edu/news/can-seaweed-cut-methane-emissions-dairy-farms/"
         },
         {
             title: "How eating seaweed can help cows to belch less methane",
             img: "/assets/img/articles/industry-insights-3.png",
-            tag: "company-news",
+            tag: "industry-insight",
             publisher: "YaleEnvironment360",
             date: "2 July 2018",
             url: "https://e360.yale.edu/features/how-eating-seaweed-can-help-cows-to-belch-less-methane"
@@ -104,7 +104,7 @@ const articles = [
             title: "Seaweed could make cows burp less methane and cut their carbon hoofprint",
             date: "23 November 2018",
             img: "/assets/img/articles/industry-insights-1.png",
-            tag: "company-news",
+            tag: "industry-insight",
             publisher: "MIT Technology Review",
             url: "https://www.technologyreview.com/s/612452/how-seaweed-could-shrink-livestocks-global-carbon-hoofprint/?fbclid=IwAR0wmvtkcK3egKf_Hcy5SUdhwsXfrq7WAPXlNFxNByvA3AYiqgVIQjDembg"
         },
@@ -138,7 +138,7 @@ const articles = [
             title: "10 technologies that could combat climate change as food demand soars",
             date: "18 July 2019",
             img: "/assets/img/articles/industry-insights-5.png",
-            tag: "company-news",
+            tag: "industry-insight",
             publisher: "MIT Technology Review",
             url: "https://www.technologyreview.com/s/613979/gene-editing-will-help-far-more-than-organic-food-to-slow-global-warming/amp/?__twitter_impression=true&fbclid=IwAR1v2jIE9C5wKqnKEb1Upk4F9QdL0bTFsCR-q4snVR_0KML02Yf2G8Ws_pw"
         },
@@ -164,7 +164,7 @@ const articles = [
             title: "Cows fed seaweed in bid to tackle climate change",
             date: "31 August 2018",
             img: "/assets/img/articles/industry-insights-2.png",
-            tag: "company-news",
+            tag: "industry-insight",
             publisher: "Independent",
             url: "https://www.independent.co.uk/environment/cows-seaweed-food-climate-change-global-warming-methane-emissions-university-california-a8516361.html"
         }),
