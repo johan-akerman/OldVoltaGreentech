@@ -192,13 +192,13 @@ const articles = [
   },
 ];
 
-console.log(api.GetArticles());
+var api = new Api();
 
 var container = document.getElementById("news-container");
 
 function createArticle(article) {
   let prettyTag;
-  switch (article.tag) {
+  switch (article.articletag) {
     case "company-news":
       prettyTag = "Company News";
       break;
@@ -213,7 +213,7 @@ function createArticle(article) {
       break;
   }
   const newsArticle = document.createElement("div");
-  newsArticle.className = `${article.tag} col-sm-12 col-md-6 col-lg-4`;
+  newsArticle.className = `${article.articletag} col-sm-12 col-md-6 col-lg-4`;
   container.appendChild(newsArticle);
 
   const card = document.createElement("div");
@@ -222,7 +222,7 @@ function createArticle(article) {
 
   const img = document.createElement("img");
   img.className = "card-img-top";
-  img.src = article.img;
+  img.src = article.imageurl;
   card.appendChild(img);
 
   const cardBlock = document.createElement("div");
@@ -241,21 +241,25 @@ function createArticle(article) {
 
   const source = document.createElement("div");
   source.className = "source";
-  source.innerHTML = `${article.publisher}, ${article.date}`;
+  source.innerHTML = `${article.articlepublisher}, ${article.articledate}`;
   cardBlock.appendChild(source);
 
   const link = document.createElement("a");
   link.className = "btn btn-border article";
   link.target = "_blank";
-  link.href = article.url;
+  link.href = article.articleurl;
   link.innerHTML = "→";
   cardBlock.appendChild(link);
 }
 
-function createArticles() {
-  const api = new Api();
-  for (let index = 0; index < articles.length; index++) {
-    createArticle(articles[index]);
+async function createArticles() {
+  var result = await api.GetArticles();
+  if (result.success) {
+    const articles = result.message;
+    console.log(articles);
+    for (let index = 0; index < articles.length; index++) {
+      createArticle(articles[index]);
+    }
   }
 }
 createArticles();
