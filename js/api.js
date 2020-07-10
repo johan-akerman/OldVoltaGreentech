@@ -54,3 +54,4 @@ class Api {
     return JSON.parse(await this.GetResponse("GET", path));
   }
 }
+var api = new Api();

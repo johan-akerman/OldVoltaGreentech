@@ -1,5 +1,3 @@
-import Api from "./api";
-
 const articles = [
   {
     title: "The startup waging war against cows farts",
