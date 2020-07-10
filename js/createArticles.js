@@ -1,3 +1,5 @@
+import Api from "./api";
+
 const articles = [
   {
     title: "The startup waging war against cows farts",
@@ -192,7 +194,7 @@ const articles = [
   },
 ];
 
-console.log(articles);
+console.log(api.GetArticles());
 
 var container = document.getElementById("news-container");
 
@@ -253,6 +255,7 @@ function createArticle(article) {
 }
 
 function createArticles() {
+  const api = new Api();
   for (let index = 0; index < articles.length; index++) {
     createArticle(articles[index]);
   }
