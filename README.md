@@ -3,7 +3,6 @@ During the summer of 2019 I built the first website for Volta Greentech, a start
 
 ## ⚙️ Technologies used
 Used html, css, javascript, jquery, bootstrap and chart.js. 
-You can see the website live over at www.voltagreentech.com
 
 ## 📸 Screenshots
 ![](assets/img/Volta.png)
